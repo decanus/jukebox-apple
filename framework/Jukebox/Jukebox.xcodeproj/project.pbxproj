@@ -7,19 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2378360E2D24899CDDEAF578 /* Pods_Jukebox_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A665FBE3FD1D5E966AC50D2B /* Pods_Jukebox_macOS.framework */; };
+		3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */; };
+		3F4048AA1D27F77E00CEF8C8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4048A91D27F77E00CEF8C8 /* AVKit.framework */; };
+		3F4048AC1D27F78500CEF8C8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4048AB1D27F78500CEF8C8 /* AVKit.framework */; };
 		3F5D47181D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F5D47191D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F5D471A1D2464C80076AB95 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D47131D2464C80076AB95 /* Test.swift */; };
-		3F5D471B1D2464C80076AB95 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D47131D2464C80076AB95 /* Test.swift */; };
+		3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
+		3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
+		3F91BDC41D27D88A00CEBB3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91BDC31D27D88A00CEBB3B /* UIKit.framework */; };
+		3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */; };
+		55090D0D36450A9870B0DA3F /* Pods_Jukebox_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165331B28C7F54ED14FC547B /* Pods-Jukebox iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox iOS/Pods-Jukebox iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		26BC425BABF107E851D6177C /* Pods-Jukebox macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox macOS/Pods-Jukebox macOS.release.xcconfig"; sourceTree = "<group>"; };
+		3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNConfiguration.swift; sourceTree = "<group>"; };
+		3F4048A91D27F77E00CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F4048AB1D27F78500CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		3F5D46F71D24615F0076AB95 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D47051D24616D0076AB95 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D47101D2464C80076AB95 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		3F5D47111D2464C80076AB95 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		3F5D47121D2464C80076AB95 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jukebox.h; path = Sources/Jukebox.h; sourceTree = "<group>"; };
-		3F5D47131D2464C80076AB95 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Sources/Test.swift; sourceTree = "<group>"; };
+		3F8BEDF01D270EDC0055A770 /* JNSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JNSearch.swift; path = Sources/API/Search/JNSearch.swift; sourceTree = "<group>"; };
+		3F91BDC31D27D88A00CEBB3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A665FBE3FD1D5E966AC50D2B /* Pods_Jukebox_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B39EF3D5BD1EB3BF66A2A6 /* Pods-Jukebox macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox macOS/Pods-Jukebox macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D78A529CD59F69D65CACDD27 /* Pods-Jukebox iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox iOS/Pods-Jukebox iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4048AA1D27F77E00CEF8C8 /* AVKit.framework in Frameworks */,
+				3F91BDC41D27D88A00CEBB3B /* UIKit.framework in Frameworks */,
+				55090D0D36450A9870B0DA3F /* Pods_Jukebox_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4048AC1D27F78500CEF8C8 /* AVKit.framework in Frameworks */,
+				2378360E2D24899CDDEAF578 /* Pods_Jukebox_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +67,8 @@
 			children = (
 				3F5D470F1D2464BC0076AB95 /* Sources */,
 				3F5D46F81D24615F0076AB95 /* Products */,
+				8A8D13DD3E67644638698551 /* Pods */,
+				7EA77B8C59217B903368BD5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,12 +84,52 @@
 		3F5D470F1D2464BC0076AB95 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3F8BEDEC1D270DD60055A770 /* API */,
 				3F5D47101D2464C80076AB95 /* Info-iOS.plist */,
 				3F5D47111D2464C80076AB95 /* Info-macOS.plist */,
 				3F5D47121D2464C80076AB95 /* Jukebox.h */,
-				3F5D47131D2464C80076AB95 /* Test.swift */,
+				3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		3F8BEDEC1D270DD60055A770 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3F8BEDED1D270DDF0055A770 /* Search */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		3F8BEDED1D270DDF0055A770 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3F8BEDF01D270EDC0055A770 /* JNSearch.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		7EA77B8C59217B903368BD5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F4048AB1D27F78500CEF8C8 /* AVKit.framework */,
+				3F4048A91D27F77E00CEF8C8 /* AVKit.framework */,
+				3F91BDC31D27D88A00CEBB3B /* UIKit.framework */,
+				A665FBE3FD1D5E966AC50D2B /* Pods_Jukebox_macOS.framework */,
+				46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A8D13DD3E67644638698551 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				165331B28C7F54ED14FC547B /* Pods-Jukebox iOS.debug.xcconfig */,
+				D78A529CD59F69D65CACDD27 /* Pods-Jukebox iOS.release.xcconfig */,
+				B4B39EF3D5BD1EB3BF66A2A6 /* Pods-Jukebox macOS.debug.xcconfig */,
+				26BC425BABF107E851D6177C /* Pods-Jukebox macOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,10 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5D46FD1D24615F0076AB95 /* Build configuration list for PBXNativeTarget "Jukebox iOS" */;
 			buildPhases = (
+				994A4E81DAC833ACBB05E420 /* [CP] Check Pods Manifest.lock */,
 				3F5D46F21D24615F0076AB95 /* Sources */,
 				3F5D46F31D24615F0076AB95 /* Frameworks */,
 				3F5D46F41D24615F0076AB95 /* Headers */,
 				3F5D46F51D24615F0076AB95 /* Resources */,
+				B3F71B967CEC78DA8E6D2767 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,10 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5D470A1D24616D0076AB95 /* Build configuration list for PBXNativeTarget "Jukebox macOS" */;
 			buildPhases = (
+				5D978416CE0E45AD34ED57C4 /* [CP] Check Pods Manifest.lock */,
 				3F5D47001D24616D0076AB95 /* Sources */,
 				3F5D47011D24616D0076AB95 /* Frameworks */,
 				3F5D47021D24616D0076AB95 /* Headers */,
 				3F5D47031D24616D0076AB95 /* Resources */,
+				11586E339E51FA00C38E00D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,12 +245,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11586E339E51FA00C38E00D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jukebox macOS/Pods-Jukebox macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D978416CE0E45AD34ED57C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		994A4E81DAC833ACBB05E420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F71B967CEC78DA8E6D2767 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jukebox iOS/Pods-Jukebox iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F5D46F21D24615F0076AB95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5D471A1D2464C80076AB95 /* Test.swift in Sources */,
+				3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */,
+				3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5D471B1D2464C80076AB95 /* Test.swift in Sources */,
+				3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */,
+				3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +333,8 @@
 		3F5D46F01D24612E0076AB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -211,6 +346,7 @@
 		};
 		3F5D46FE1D24615F0076AB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 165331B28C7F54ED14FC547B /* Pods-Jukebox iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -271,6 +407,7 @@
 		};
 		3F5D46FF1D24615F0076AB95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78A529CD59F69D65CACDD27 /* Pods-Jukebox iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -324,6 +461,7 @@
 		};
 		3F5D470B1D24616D0076AB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B39EF3D5BD1EB3BF66A2A6 /* Pods-Jukebox macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -369,7 +507,7 @@
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -385,6 +523,7 @@
 		};
 		3F5D470C1D24616D0076AB95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BC425BABF107E851D6177C /* Pods-Jukebox macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -424,7 +563,7 @@
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ninja.jukebox.frameworks.Jukebox-macOS";
@@ -455,6 +594,7 @@
 				3F5D46FF1D24615F0076AB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5D470A1D24616D0076AB95 /* Build configuration list for PBXNativeTarget "Jukebox macOS" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +603,7 @@
 				3F5D470C1D24616D0076AB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
