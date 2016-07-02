@@ -1,11 +1,15 @@
-iOS/jukebox/jukebox.xcworkspace/
-iOS/jukebox/jukebox.xcodeproj/project.xcworkspace/xcuserdata/
-iOS/jukebox/jukebox.xcodeproj/xcuserdata/
-iOS/jukebox/Pods/*
-iOS/jukebox/Podfile.lock
+iOS/jukebox.xcworkspace/
+iOS/jukebox.xcodeproj/project.xcworkspace/xcuserdata/
+iOS/jukebox.xcodeproj/xcuserdata/
+iOS/Pods/*
+iOS/Podfile.lock
 cache.properties
 .idea/
 
 .DS_Store
+framework/Jukebox/iOS-Playground.playground/playground.xcworkspace/xcuserdata/
+framework/Jukebox/Jukebox.xcworkspace/
 framework/Jukebox/Jukebox.xcodeproj/project.xcworkspace/xcuserdata/
 framework/Jukebox/Jukebox.xcodeproj/xcuserdata/
+framework/Jukebox/Pods/*
+framework/Jukebox/Podfile.lock
