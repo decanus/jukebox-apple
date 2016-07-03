@@ -7,9 +7,9 @@ cache.properties
 .idea/
 
 .DS_Store
-framework/Jukebox/iOS-Playground.playground/playground.xcworkspace/xcuserdata/
-framework/Jukebox/Jukebox.xcworkspace/
-framework/Jukebox/Jukebox.xcodeproj/project.xcworkspace/xcuserdata/
-framework/Jukebox/Jukebox.xcodeproj/xcuserdata/
-framework/Jukebox/Pods/*
-framework/Jukebox/Podfile.lock
+Framework/Jukebox/iOS-Playground.playground/playground.xcworkspace/xcuserdata/
+Framework/Jukebox/Jukebox.xcworkspace/
+Framework/Jukebox/Jukebox.xcodeproj/project.xcworkspace/xcuserdata/
+Framework/Jukebox/Jukebox.xcodeproj/xcuserdata/
+Framework/Jukebox/Pods/*
+Framework/Jukebox/Podfile.lock
