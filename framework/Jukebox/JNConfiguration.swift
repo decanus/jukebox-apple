@@ -25,6 +25,8 @@ public struct JNConfiguration {
         set(isDevelopment) {
             if isDevelopment {
                 self.baseUrl = NSURL(string: "http://devapi.jukebox.ninja/v1/search")!
+            } else {
+                self.baseUrl = NSURL(string: "https://api.jukebox.ninja/v1/search")!
             }
             
             self.isDevelopment = isDevelopment

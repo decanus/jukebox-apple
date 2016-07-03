@@ -1,0 +1,3 @@
+framework module JukeboxNinja {
+    header "JukeboxNinja-Swift.h"
+}

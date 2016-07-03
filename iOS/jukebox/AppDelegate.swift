@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import JukeboxNinja
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabController = TabBarController(player: PlayerFactory.createPlayer())
         tabController.viewControllers = [ViewControllerFactory.createMainViewController(), ViewControllerFactory.createSearchViewController()]
+        
+        JNConfiguration.isDevelopment = false
+        JNConfiguration.apiKey = "5eecc5da-0ff0-4aa0-98a0-ebcdfab3336c"
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = tabController
