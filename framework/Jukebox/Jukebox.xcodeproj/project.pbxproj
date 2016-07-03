@@ -17,6 +17,9 @@
 		3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
 		3F91BDC41D27D88A00CEBB3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91BDC31D27D88A00CEBB3B /* UIKit.framework */; };
 		3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */; };
+		3FF8DCB21D294C5600800F5A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB11D294C5600800F5A /* Track.swift */; };
+		3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB31D294CBD00800F5A /* Platform.swift */; };
+		3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */; };
 		55090D0D36450A9870B0DA3F /* Pods_Jukebox_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +29,16 @@
 		3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNConfiguration.swift; sourceTree = "<group>"; };
 		3F4048A91D27F77E00CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		3F4048AB1D27F78500CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		3F5D46F71D24615F0076AB95 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5D46F71D24615F0076AB95 /* JukeboxNinja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JukeboxNinja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D47051D24616D0076AB95 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D47101D2464C80076AB95 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		3F5D47111D2464C80076AB95 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		3F5D47121D2464C80076AB95 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jukebox.h; path = Sources/Jukebox.h; sourceTree = "<group>"; };
 		3F8BEDF01D270EDC0055A770 /* JNSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JNSearch.swift; path = Sources/API/Search/JNSearch.swift; sourceTree = "<group>"; };
 		3F91BDC31D27D88A00CEBB3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FF8DCB11D294C5600800F5A /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		3FF8DCB31D294CBD00800F5A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTrack.swift; sourceTree = "<group>"; };
 		46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A665FBE3FD1D5E966AC50D2B /* Pods_Jukebox_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B39EF3D5BD1EB3BF66A2A6 /* Pods-Jukebox macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox macOS/Pods-Jukebox macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +81,7 @@
 		3F5D46F81D24615F0076AB95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F5D46F71D24615F0076AB95 /* Jukebox.framework */,
+				3F5D46F71D24615F0076AB95 /* JukeboxNinja.framework */,
 				3F5D47051D24616D0076AB95 /* Jukebox.framework */,
 			);
 			name = Products;
@@ -96,6 +102,7 @@
 		3F8BEDEC1D270DD60055A770 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3FF8DCB01D294C5600800F5A /* Models */,
 				3F8BEDED1D270DDF0055A770 /* Search */,
 			);
 			name = API;
@@ -107,6 +114,17 @@
 				3F8BEDF01D270EDC0055A770 /* JNSearch.swift */,
 			);
 			name = Search;
+			sourceTree = "<group>";
+		};
+		3FF8DCB01D294C5600800F5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */,
+				3FF8DCB31D294CBD00800F5A /* Platform.swift */,
+				3FF8DCB11D294C5600800F5A /* Track.swift */,
+			);
+			name = Models;
+			path = Sources/Models;
 			sourceTree = "<group>";
 		};
 		7EA77B8C59217B903368BD5F /* Frameworks */ = {
@@ -171,7 +189,7 @@
 			);
 			name = "Jukebox iOS";
 			productName = "Jukebox iOS";
-			productReference = 3F5D46F71D24615F0076AB95 /* Jukebox.framework */;
+			productReference = 3F5D46F71D24615F0076AB95 /* JukeboxNinja.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3F5D47041D24616D0076AB95 /* Jukebox macOS */ = {
@@ -314,7 +332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */,
+				3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */,
 				3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */,
+				3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */,
+				3FF8DCB21D294C5600800F5A /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +416,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "ninja.jukebox.frameworks.Jukebox-iOS";
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = JukeboxNinja;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -449,7 +470,7 @@
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ninja.jukebox.frameworks.Jukebox-iOS";
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = JukeboxNinja;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
