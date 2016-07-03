@@ -8,37 +8,19 @@
 
 import Foundation
 
-public class YoutubeTrack: JNTrack {
+public class JNYoutubeTrack: JNTrack {
     
-    public private(set) var id: String {
-        get { return self.id }
-        set(id) { self.id = id }
-    }
+    public let id: String
+    public let title: String
+    public let artist: String
+    public let platform: JNPlatform
+    public var duration: NSTimeInterval
     
-    public private(set) var title: String {
-        get { return self.title }
-        set(title) { self.title = title }
-    }
-    
-    public private(set) var artist: String {
-        get { return self.artist }
-        set(artist) { self.artist = artist }
-    }
-    
-    public var duration: NSTimeInterval {
-        get { return self.duration}
-        set(duration) { self.duration = duration }
-    }
-    
-    public private(set) var platform: JNPlatform {
-        get { return self.platform }
-        set(platform) { self.platform = platform }
-    }
-    
-    init(id: String, title: String, artist: String, duration: NSTimeInterval) {
+    public init(id: String, title: String, artist: String, duration: NSTimeInterval) {
         self.id = id
         self.title = title
         self.artist = artist
+        self.platform = JNPlatform.Youtube
         self.duration = duration
     }
     

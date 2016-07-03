@@ -1,11 +1,14 @@
 //: Playground - noun: a place where people can play
 
-import Jukebox
+import JukeboxNinja
 
-JNConfiguration.isDevelopment = true
-JNConfiguration.apiKey = "5eecc5da-0ff0-4aa0-98a0-ebcdfab3336c"
 
-let searchHandler = JNSearch()
-searchHandler.search(query: "sia") { (results) in
-    print(results)
-}
+var queue = JNQueue()
+
+let track1 = JNYoutubeTrack(id: "", title: "Track 1", artist: "", duration: 0)
+let track2 = JNYoutubeTrack(id: "", title: "Track 2", artist: "", duration: 0)
+let track3 = JNYoutubeTrack(id: "", title: "Track 3", artist: "", duration: 0)
+
+queue += track1
+queue += track2
+queue += track3

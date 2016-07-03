@@ -20,6 +20,10 @@
 		3FF8DCB21D294C5600800F5A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB11D294C5600800F5A /* Track.swift */; };
 		3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB31D294CBD00800F5A /* Platform.swift */; };
 		3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */; };
+		3FF8DCB81D295B0300800F5A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB71D295B0300800F5A /* Playlist.swift */; };
+		3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB91D29609100800F5A /* PlaybackState.swift */; };
+		3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */; };
+		3FF8DCBE1D29628300800F5A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCBD1D29628300800F5A /* Queue.swift */; };
 		55090D0D36450A9870B0DA3F /* Pods_Jukebox_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		3FF8DCB11D294C5600800F5A /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		3FF8DCB31D294CBD00800F5A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTrack.swift; sourceTree = "<group>"; };
+		3FF8DCB71D295B0300800F5A /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		3FF8DCB91D29609100800F5A /* PlaybackState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
+		3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMode.swift; sourceTree = "<group>"; };
+		3FF8DCBD1D29628300800F5A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		46B1095C266E3157A137B89C /* Pods_Jukebox_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A665FBE3FD1D5E966AC50D2B /* Pods_Jukebox_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukebox_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B39EF3D5BD1EB3BF66A2A6 /* Pods-Jukebox macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukebox macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jukebox macOS/Pods-Jukebox macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,9 +127,13 @@
 		3FF8DCB01D294C5600800F5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3FF8DCBD1D29628300800F5A /* Queue.swift */,
+				3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */,
+				3FF8DCB91D29609100800F5A /* PlaybackState.swift */,
 				3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */,
 				3FF8DCB31D294CBD00800F5A /* Platform.swift */,
 				3FF8DCB11D294C5600800F5A /* Track.swift */,
+				3FF8DCB71D295B0300800F5A /* Playlist.swift */,
 			);
 			name = Models;
 			path = Sources/Models;
@@ -332,10 +344,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */,
+				3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */,
 				3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */,
 				3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */,
+				3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */,
 				3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */,
 				3FF8DCB21D294C5600800F5A /* Track.swift in Sources */,
+				3FF8DCBE1D29628300800F5A /* Queue.swift in Sources */,
+				3FF8DCB81D295B0300800F5A /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

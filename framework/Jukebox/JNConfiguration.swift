@@ -9,27 +9,27 @@
 import Foundation
 
 public struct JNConfiguration {
+
+    static private var _baseUrl: NSURL = NSURL(string: "https://api.jukebox.ninja/v1/search")!
+    static private var _isDevelopment: Bool = false
+    static public var apiKey: String = ""
     
-    static public private(set) var baseUrl: NSURL {
-        get { return self.baseUrl }
-        set(baseUrl) { self.baseUrl = baseUrl }
-    }
-    
-    static public var apiKey: String {
-        get { return self.apiKey }
-        set(apiKey) { self.apiKey = apiKey }
+    static public var baseUrl: NSURL {
+        return self._baseUrl
     }
     
     static public var isDevelopment: Bool {
-        get { return self.isDevelopment }
+        get { return self._isDevelopment }
+        
         set(isDevelopment) {
+    
             if isDevelopment {
-                self.baseUrl = NSURL(string: "http://devapi.jukebox.ninja/v1/search")!
+                self._baseUrl = NSURL(string: "http://devapi.jukebox.ninja/v1/search")!
             } else {
-                self.baseUrl = NSURL(string: "https://api.jukebox.ninja/v1/search")!
+                self._baseUrl = NSURL(string: "https://api.jukebox.ninja/v1/search")!
             }
             
-            self.isDevelopment = isDevelopment
+            self._isDevelopment = isDevelopment
         }
     }
 }
