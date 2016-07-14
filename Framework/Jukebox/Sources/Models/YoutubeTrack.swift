@@ -23,5 +23,5 @@ public class JNYoutubeTrack: JNTrack {
         self.platform = JNPlatform.Youtube
         self.duration = duration
     }
-    
+
 }

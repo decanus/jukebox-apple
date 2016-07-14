@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol JNTrack {
+public protocol JNTrack: JNSearchResult {
     
     var id: String { get }
 

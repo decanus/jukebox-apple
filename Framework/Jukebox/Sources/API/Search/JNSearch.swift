@@ -16,7 +16,7 @@ public class JNSearch {
     
     public init() { }
     
-    // TODO use real data type instead of string
+    // TODO use real data type instead of string E.g. JNSearchResult
     public func search(query query: String, callback: ([String]) -> Void) {
         parameters["query"] = query
         

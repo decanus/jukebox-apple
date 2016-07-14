@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F5D47041D24616D0076AB95"
-               BuildableName = "Jukebox.framework"
+               BuildableName = "JukeboxNinja.framework"
                BlueprintName = "Jukebox macOS"
                ReferencedContainer = "container:Jukebox.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F5D47041D24616D0076AB95"
-            BuildableName = "Jukebox.framework"
+            BuildableName = "JukeboxNinja.framework"
             BlueprintName = "Jukebox macOS"
             ReferencedContainer = "container:Jukebox.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F5D47041D24616D0076AB95"
-            BuildableName = "Jukebox.framework"
+            BuildableName = "JukeboxNinja.framework"
             BlueprintName = "Jukebox macOS"
             ReferencedContainer = "container:Jukebox.xcodeproj">
          </BuildableReference>

@@ -13,6 +13,7 @@
 		3F4048AC1D27F78500CEF8C8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4048AB1D27F78500CEF8C8 /* AVKit.framework */; };
 		3F5D47181D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F5D47191D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F8ACCAD1D37A7B6004A85F1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */; };
 		3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
 		3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
 		3F91BDC41D27D88A00CEBB3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91BDC31D27D88A00CEBB3B /* UIKit.framework */; };
@@ -34,10 +35,11 @@
 		3F4048A91D27F77E00CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		3F4048AB1D27F78500CEF8C8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		3F5D46F71D24615F0076AB95 /* JukeboxNinja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JukeboxNinja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F5D47051D24616D0076AB95 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5D47051D24616D0076AB95 /* JukeboxNinja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JukeboxNinja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D47101D2464C80076AB95 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		3F5D47111D2464C80076AB95 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		3F5D47121D2464C80076AB95 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jukebox.h; path = Sources/Jukebox.h; sourceTree = "<group>"; };
+		3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = Sources/Models/SearchResult.swift; sourceTree = "<group>"; };
 		3F8BEDF01D270EDC0055A770 /* JNSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JNSearch.swift; path = Sources/API/Search/JNSearch.swift; sourceTree = "<group>"; };
 		3F91BDC31D27D88A00CEBB3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3FF8DCB11D294C5600800F5A /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -90,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5D46F71D24615F0076AB95 /* JukeboxNinja.framework */,
-				3F5D47051D24616D0076AB95 /* Jukebox.framework */,
+				3F5D47051D24616D0076AB95 /* JukeboxNinja.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3F8BEDF01D270EDC0055A770 /* JNSearch.swift */,
+				3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -221,7 +224,7 @@
 			);
 			name = "Jukebox macOS";
 			productName = "Jukebox macOS";
-			productReference = 3F5D47051D24616D0076AB95 /* Jukebox.framework */;
+			productReference = 3F5D47051D24616D0076AB95 /* JukeboxNinja.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -345,6 +348,7 @@
 			files = (
 				3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */,
 				3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */,
+				3F8ACCAD1D37A7B6004A85F1 /* SearchResult.swift in Sources */,
 				3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */,
 				3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */,
 				3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */,
@@ -426,7 +430,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -481,7 +485,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -549,7 +553,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "ninja.jukebox.frameworks.Jukebox-macOS";
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = JukeboxNinja;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -604,7 +608,7 @@
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ninja.jukebox.frameworks.Jukebox-macOS";
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = JukeboxNinja;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
