@@ -13,9 +13,10 @@
 		3F4048AC1D27F78500CEF8C8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4048AB1D27F78500CEF8C8 /* AVKit.framework */; };
 		3F5D47181D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F5D47191D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F677C2B1D392A4D00725BE3 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2A1D392A4D00725BE3 /* Artist.swift */; };
+		3F677C2D1D392A5C00725BE3 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2C1D392A5C00725BE3 /* Search.swift */; };
+		3F677C2F1D392CB900725BE3 /* YoutubeArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */; };
 		3F8ACCAD1D37A7B6004A85F1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */; };
-		3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
-		3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BEDF01D270EDC0055A770 /* JNSearch.swift */; };
 		3F91BDC41D27D88A00CEBB3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91BDC31D27D88A00CEBB3B /* UIKit.framework */; };
 		3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */; };
 		3FF8DCB21D294C5600800F5A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB11D294C5600800F5A /* Track.swift */; };
@@ -39,8 +40,10 @@
 		3F5D47101D2464C80076AB95 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		3F5D47111D2464C80076AB95 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		3F5D47121D2464C80076AB95 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jukebox.h; path = Sources/Jukebox.h; sourceTree = "<group>"; };
+		3F677C2A1D392A4D00725BE3 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		3F677C2C1D392A5C00725BE3 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Sources/API/Search/Search.swift; sourceTree = "<group>"; };
+		3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeArtist.swift; sourceTree = "<group>"; };
 		3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = Sources/Models/SearchResult.swift; sourceTree = "<group>"; };
-		3F8BEDF01D270EDC0055A770 /* JNSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JNSearch.swift; path = Sources/API/Search/JNSearch.swift; sourceTree = "<group>"; };
 		3F91BDC31D27D88A00CEBB3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3FF8DCB11D294C5600800F5A /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		3FF8DCB31D294CBD00800F5A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
@@ -121,7 +124,7 @@
 		3F8BEDED1D270DDF0055A770 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				3F8BEDF01D270EDC0055A770 /* JNSearch.swift */,
+				3F677C2C1D392A5C00725BE3 /* Search.swift */,
 				3F8ACCAC1D37A7B6004A85F1 /* SearchResult.swift */,
 			);
 			name = Search;
@@ -130,6 +133,7 @@
 		3FF8DCB01D294C5600800F5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F677C2A1D392A4D00725BE3 /* Artist.swift */,
 				3FF8DCBD1D29628300800F5A /* Queue.swift */,
 				3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */,
 				3FF8DCB91D29609100800F5A /* PlaybackState.swift */,
@@ -137,6 +141,7 @@
 				3FF8DCB31D294CBD00800F5A /* Platform.swift */,
 				3FF8DCB11D294C5600800F5A /* Track.swift */,
 				3FF8DCB71D295B0300800F5A /* Playlist.swift */,
+				3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */,
 			);
 			name = Models;
 			path = Sources/Models;
@@ -346,15 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F677C2D1D392A5C00725BE3 /* Search.swift in Sources */,
 				3F40489D1D27F21C00CEF8C8 /* JNConfiguration.swift in Sources */,
 				3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */,
 				3F8ACCAD1D37A7B6004A85F1 /* SearchResult.swift in Sources */,
 				3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */,
-				3F8BEDF11D270EDC0055A770 /* JNSearch.swift in Sources */,
 				3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */,
+				3F677C2F1D392CB900725BE3 /* YoutubeArtist.swift in Sources */,
 				3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */,
 				3FF8DCB21D294C5600800F5A /* Track.swift in Sources */,
 				3FF8DCBE1D29628300800F5A /* Queue.swift in Sources */,
+				3F677C2B1D392A4D00725BE3 /* Artist.swift in Sources */,
 				3FF8DCB81D295B0300800F5A /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */,
-				3F8BEDF51D2712D70055A770 /* JNSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

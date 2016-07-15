@@ -10,16 +10,16 @@ import Foundation
 
 public class JNYoutubeTrack: JNTrack {
     
-    public let id: String
+    public let id: Int
     public let title: String
-    public let artist: String
+    public let artists: [JNArtist]
     public let platform: JNPlatform
     public var duration: NSTimeInterval
     
-    public init(id: String, title: String, artist: String, duration: NSTimeInterval) {
+    public init(id: Int, title: String, artists: [JNArtist], duration: NSTimeInterval) {
         self.id = id
         self.title = title
-        self.artist = artist
+        self.artists = artists
         self.platform = JNPlatform.Youtube
         self.duration = duration
     }

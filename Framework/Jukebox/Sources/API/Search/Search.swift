@@ -38,18 +38,39 @@ public class JNSearch {
                     if data["type"] as! String == "tracks" {
                         results.append(self.parseTrack(data))
                     }
+                    
+                    if data["type"] as! String == "artists" {
+                        results.append(self.parseArtist(data))
+                    }
                 }
             
                 callback(results)
         }
     }
+    
+    private func parseArtist(data: NSDictionary) -> JNArtist {
+        return JNYoutubeArtist(
+            id: data["id"] as! Int,
+            name: data["name"] as! String,
+            permalink: data["permalink"] as! String)
+    }
 
-    // TODO add all artists
     private func parseTrack(data: NSDictionary) -> JNTrack {
         return JNYoutubeTrack(
-            id: String(data["id"] as! Int),
+            id: data["id"] as! Int,
             title: data["title"] as! String,
-            artist: ((data["artists"] as! NSArray)[0] as! NSDictionary)["name"] as! String,
+            artists: parseArtists(data["artists"] as! NSArray),
             duration: data["duration"] as! Double)
     }
+    
+    private func parseArtists(data: NSArray) -> [JNArtist] {
+        var artists = [JNArtist]()
+        
+        for element in data {
+            artists.append(parseArtist(element as! NSDictionary))
+        }
+        
+        return artists
+    }
+    
 }

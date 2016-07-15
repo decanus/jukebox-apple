@@ -10,12 +10,12 @@ import Foundation
 
 public protocol JNTrack: JNSearchResult {
     
-    var id: String { get }
-
+    var id: Int { get }
+    
     var title: String { get }
     
-    var artist: String { get }
-
+    var artists: [JNArtist] { get }
+    
     var duration: NSTimeInterval { get set }
     
     var platform: JNPlatform { get }

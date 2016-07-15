@@ -29,11 +29,28 @@ extension JNTrack {
     }
     
     public var resultSubtitle: String {
-        return artist
+        return artists[0].resultTitle
     }
     
     public var resultType: JNSearchResultType {
         return .Track
+    }
+    
+}
+
+
+extension JNArtist {
+    
+    public var resultTitle: String {
+        return name
+    }
+    
+    public var resultSubtitle: String {
+        return ""
+    }
+    
+    public var resultType: JNSearchResultType {
+        return .Artist
     }
     
 }
