@@ -10,7 +10,7 @@ import Foundation
 
 public struct JNConfiguration {
 
-    static private var _baseUrl: NSURL = NSURL(string: "https://api.jukebox.ninja/v1/search")!
+    static private var _baseUrl: NSURL = NSURL(string: "https://api.jukebox.ninja/v1")!
     static private var _isDevelopment: Bool = false
     static public var apiKey: String = ""
     
@@ -24,9 +24,9 @@ public struct JNConfiguration {
         set(isDevelopment) {
     
             if isDevelopment {
-                self._baseUrl = NSURL(string: "http://devapi.jukebox.ninja/v1/search")!
+                self._baseUrl = NSURL(string: "http://devapi.jukebox.ninja/v1")!
             } else {
-                self._baseUrl = NSURL(string: "https://api.jukebox.ninja/v1/search")!
+                self._baseUrl = NSURL(string: "https://api.jukebox.ninja/v1")!
             }
             
             self._isDevelopment = isDevelopment

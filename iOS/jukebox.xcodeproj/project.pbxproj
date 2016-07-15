@@ -16,11 +16,6 @@
 		2E124B041CE0743A002BC8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E124B031CE0743A002BC8E4 /* Assets.xcassets */; };
 		2E124B121CE0743A002BC8E4 /* jukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E124B111CE0743A002BC8E4 /* jukeboxTests.swift */; };
 		2E124B1D1CE0743A002BC8E4 /* jukeboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E124B1C1CE0743A002BC8E4 /* jukeboxUITests.swift */; };
-		2E92FEE81CE30639006BFB03 /* XCDYouTubeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E92FEE71CE30639006BFB03 /* XCDYouTubeKit.framework */; };
-		2E962AD01D295635008D49CC /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E962ACF1D295635008D49CC /* JukeboxNinja.framework */; };
-		2E962AD51D29578E008D49CC /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E962AD41D29578E008D49CC /* JukeboxNinja.framework */; };
-		2E962AD61D295807008D49CC /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E962AD41D29578E008D49CC /* JukeboxNinja.framework */; };
-		2E962AD71D295807008D49CC /* JukeboxNinja.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E962AD41D29578E008D49CC /* JukeboxNinja.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2ECBCB4D1CE079BF0015ABB8 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBCB4C1CE079BF0015ABB8 /* TrackViewController.swift */; };
 		2ECBCB501CE07A130015ABB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBCB4F1CE07A130015ABB8 /* MainViewController.swift */; };
 		2ECBCB531CE07BD20015ABB8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBCB521CE07BD20015ABB8 /* Player.swift */; };
@@ -45,11 +40,11 @@
 		2EF0B18B1CE1D7850061FF7A /* PlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0B18A1CE1D7850061FF7A /* PlayerFactory.swift */; };
 		2EF0B18F1CE1EB990061FF7A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0B18E1CE1EB990061FF7A /* Queue.swift */; };
 		2EFD5D521CEAF1B5003A8C23 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD5D511CEAF1B5003A8C23 /* SearchPresenter.swift */; };
-		2EFD5D561CEAF748003A8C23 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFD5D551CEAF748003A8C23 /* Alamofire.framework */; };
+		3F677C201D39154200725BE3 /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F677C1F1D39154200725BE3 /* JukeboxNinja.framework */; };
+		3F677C211D39154A00725BE3 /* JukeboxNinja.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F677C1F1D39154200725BE3 /* JukeboxNinja.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC12B127AE05E20CE95EC95E /* SearchViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B9A7336C1DA6665BB9E9 /* SearchViewControllerOutput.swift */; };
 		AC12B5E154B2C8DA24C96393 /* SearchPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B675E72C86FAF174A8F6 /* SearchPresenterOutput.swift */; };
 		AC12B5FE069319AAF8903CE6 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B2E3073DEF176B9C0412 /* SearchInteractorOutput.swift */; };
-		E53AA7DE136B2A708093BDEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE09ED2BF82C36935BB372F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2E962AD71D295807008D49CC /* JukeboxNinja.framework in Embed Frameworks */,
+				3F677C211D39154A00725BE3 /* JukeboxNinja.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		13A9FB6EB90C4B2445431D7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0B320FDEB328C3ACDBB256E3 /* Pods-jukebox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jukebox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jukebox/Pods-jukebox.debug.xcconfig"; sourceTree = "<group>"; };
 		2E0C6B3B1CE124EA0016C9FC /* PlaybackState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
 		2E0C6B3D1CE125420016C9FC /* RepeatMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMode.swift; sourceTree = "<group>"; };
 		2E11A1C71CE324E800335C29 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -100,10 +95,6 @@
 		2E124B181CE0743A002BC8E4 /* jukeboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jukeboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E124B1C1CE0743A002BC8E4 /* jukeboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jukeboxUITests.swift; sourceTree = "<group>"; };
 		2E124B1E1CE0743A002BC8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E92FEE51CE304FC006BFB03 /* XCDYouTubeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCDYouTubeKit.framework; path = "Pods/../build/Release-iphoneos/XCDYouTubeKit.framework"; sourceTree = "<group>"; };
-		2E92FEE71CE30639006BFB03 /* XCDYouTubeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCDYouTubeKit.framework; path = "Pods/../build/Release-iphoneos/XCDYouTubeKit.framework"; sourceTree = "<group>"; };
-		2E962ACF1D295635008D49CC /* JukeboxNinja.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JukeboxNinja.framework; path = "/Users/deaneigenmann/Documents/jukebox-apple/iOS/JukeboxNinja.framework"; sourceTree = "<absolute>"; };
-		2E962AD41D29578E008D49CC /* JukeboxNinja.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JukeboxNinja.framework; sourceTree = "<group>"; };
 		2ECBCB4C1CE079BF0015ABB8 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		2ECBCB4F1CE07A130015ABB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2ECBCB521CE07BD20015ABB8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -124,7 +115,6 @@
 		2ECC64BB1CE65742004249A4 /* PlayerPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerPresenterOutput.swift; sourceTree = "<group>"; };
 		2ECC64BD1CE8BA8E004249A4 /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		2ECC64C21CEA22AC004249A4 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
-		2EF0B17E1CE1BA130061FF7A /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = youtube_ios_player_helper.framework; path = "Pods/../build/Debug-iphoneos/youtube_ios_player_helper.framework"; sourceTree = "<group>"; };
 		2EF0B1801CE1BAFA0061FF7A /* YoutubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubePlayer.swift; sourceTree = "<group>"; };
 		2EF0B1841CE1BB9A0061FF7A /* YTPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		2EF0B1851CE1BB9A0061FF7A /* YTPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
@@ -134,13 +124,11 @@
 		2EF0B18A1CE1D7850061FF7A /* PlayerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerFactory.swift; sourceTree = "<group>"; };
 		2EF0B18E1CE1EB990061FF7A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		2EFD5D511CEAF1B5003A8C23 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
-		2EFD5D531CEAF6AC003A8C23 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Release-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
-		2EFD5D551CEAF748003A8C23 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/jukebox-extkoihjwulklqfehiuyeledfxkt/Build/Products/Release-iphonesimulator/Alamofire.framework"; sourceTree = "<group>"; };
+		3F677C1F1D39154200725BE3 /* JukeboxNinja.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JukeboxNinja.framework; sourceTree = "<group>"; };
+		5DF129D95CA9BF52D93A7087 /* Pods-jukebox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jukebox.release.xcconfig"; path = "Pods/Target Support Files/Pods-jukebox/Pods-jukebox.release.xcconfig"; sourceTree = "<group>"; };
 		AC12B2E3073DEF176B9C0412 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
 		AC12B675E72C86FAF174A8F6 /* SearchPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterOutput.swift; sourceTree = "<group>"; };
 		AC12B9A7336C1DA6665BB9E9 /* SearchViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerOutput.swift; sourceTree = "<group>"; };
-		DAE09ED2BF82C36935BB372F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF23D17DAB9DEEB2AF8B387D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E962AD61D295807008D49CC /* JukeboxNinja.framework in Frameworks */,
-				2EFD5D561CEAF748003A8C23 /* Alamofire.framework in Frameworks */,
-				2E92FEE81CE30639006BFB03 /* XCDYouTubeKit.framework in Frameworks */,
-				2E962AD01D295635008D49CC /* JukeboxNinja.framework in Frameworks */,
-				E53AA7DE136B2A708093BDEF /* Pods.framework in Frameworks */,
-				2E962AD51D29578E008D49CC /* JukeboxNinja.framework in Frameworks */,
+				3F677C201D39154200725BE3 /* JukeboxNinja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +389,8 @@
 		AB90DEA71A4F0A71329AE304 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF23D17DAB9DEEB2AF8B387D /* Pods.debug.xcconfig */,
-				13A9FB6EB90C4B2445431D7F /* Pods.release.xcconfig */,
+				0B320FDEB328C3ACDBB256E3 /* Pods-jukebox.debug.xcconfig */,
+				5DF129D95CA9BF52D93A7087 /* Pods-jukebox.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -425,14 +408,8 @@
 		B137E74D3FE32D8FFE1EF7FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E962AD41D29578E008D49CC /* JukeboxNinja.framework */,
-				2EFD5D551CEAF748003A8C23 /* Alamofire.framework */,
-				2EFD5D531CEAF6AC003A8C23 /* Alamofire.framework */,
-				2E92FEE71CE30639006BFB03 /* XCDYouTubeKit.framework */,
-				2E92FEE51CE304FC006BFB03 /* XCDYouTubeKit.framework */,
+				3F677C1F1D39154200725BE3 /* JukeboxNinja.framework */,
 				2EF0B1821CE1BB9A0061FF7A /* youtube-ios-player-helper */,
-				2EF0B17E1CE1BA130061FF7A /* youtube_ios_player_helper.framework */,
-				DAE09ED2BF82C36935BB372F /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -444,12 +421,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E124B211CE0743A002BC8E4 /* Build configuration list for PBXNativeTarget "jukebox" */;
 			buildPhases = (
-				C18A829D68D7BD9C1E2E9D5A /* Check Pods Manifest.lock */,
+				C18A829D68D7BD9C1E2E9D5A /* [CP] Check Pods Manifest.lock */,
 				2E124AF51CE0743A002BC8E4 /* Sources */,
 				2E124AF61CE0743A002BC8E4 /* Frameworks */,
 				2E124AF71CE0743A002BC8E4 /* Resources */,
-				FE2490D893BE481862C0B4C9 /* Embed Pods Frameworks */,
-				40FD9475F2EB2D5CF63ED0C0 /* Copy Pods Resources */,
+				FE2490D893BE481862C0B4C9 /* [CP] Embed Pods Frameworks */,
+				40FD9475F2EB2D5CF63ED0C0 /* [CP] Copy Pods Resources */,
 				2E962AD31D29563A008D49CC /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -574,29 +551,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40FD9475F2EB2D5CF63ED0C0 /* Copy Pods Resources */ = {
+		40FD9475F2EB2D5CF63ED0C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jukebox/Pods-jukebox-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C18A829D68D7BD9C1E2E9D5A /* Check Pods Manifest.lock */ = {
+		C18A829D68D7BD9C1E2E9D5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,19 +581,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FE2490D893BE481862C0B4C9 /* Embed Pods Frameworks */ = {
+		FE2490D893BE481862C0B4C9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jukebox/Pods-jukebox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -781,7 +758,7 @@
 		};
 		2E124B221CE0743A002BC8E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF23D17DAB9DEEB2AF8B387D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0B320FDEB328C3ACDBB256E3 /* Pods-jukebox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -804,7 +781,7 @@
 		};
 		2E124B231CE0743A002BC8E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13A9FB6EB90C4B2445431D7F /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5DF129D95CA9BF52D93A7087 /* Pods-jukebox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

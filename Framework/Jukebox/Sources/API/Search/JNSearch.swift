@@ -1,5 +1,5 @@
 //
-//  JNSearchInteractor.swift
+//  JNSearch.swift
 //  Jukebox
 //
 //  Created by Jeremy Stucki on 01/07/2016.
@@ -20,14 +20,14 @@ public class JNSearch {
     public func search(query query: String, callback: ([String]) -> Void) {
         parameters["query"] = query
         
-        Alamofire.request(.GET, "\(baseUrl.absoluteString)/v1/search", parameters: parameters)
+        Alamofire.request(.GET, baseUrl.absoluteString, parameters: parameters)
         .validate()
         .responseJSON { (response) in
             if response.result.isFailure {
                 return callback([])
             }
             
-            return callback([(response.result.value as! NSArray).description])
+            return callback([(response.result.value as! NSDictionary).description])
         }
     }
 }
