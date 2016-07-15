@@ -16,18 +16,40 @@ public class JNSearch {
     
     public init() { }
     
-    // TODO use real data type instead of string, better error handling
-    public func search(query query: String, callback: ([String]) -> Void) {
+    public func search(query query: String, callback: ([JNSearchResult]) -> Void) {
         parameters["query"] = query
         
         Alamofire.request(.GET, baseUrl.absoluteString, parameters: parameters)
         .validate()
         .responseJSON { (response) in
-            if response.result.isFailure {
-                return callback([])
-            }
+                if response.result.isFailure {
+                    return callback([])
+                }
+
+                if (response.result.value as? NSArray) != nil {
+                    return callback([])
+                }
+
+                var results = [JNSearchResult]()
+
+                for entry in (response.result.value as! NSDictionary)["results"] as! NSArray {
+                    let data = entry as! NSDictionary
+
+                    if data["type"] as! String == "tracks" {
+                        results.append(self.parseTrack(data))
+                    }
+                }
             
-            return callback([(response.result.value as! NSDictionary).description])
+                callback(results)
         }
+    }
+
+    // TODO add all artists
+    private func parseTrack(data: NSDictionary) -> JNTrack {
+        return JNYoutubeTrack(
+            id: String(data["id"] as! Int),
+            title: data["title"] as! String,
+            artist: ((data["artists"] as! NSArray)[0] as! NSDictionary)["name"] as! String,
+            duration: data["duration"] as! Double)
     }
 }

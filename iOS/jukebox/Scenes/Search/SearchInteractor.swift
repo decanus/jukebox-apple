@@ -26,14 +26,12 @@ class SearchInteractor: NSObject, SearchViewControllerOutput {
         }
         
         let search = JNSearch()
-        search.search(query: "sia") { (fuck) in
-            print(fuck)
+        search.search(query: "sia") { (result) in
+            for element in result {
+                print(element.resultTitle)
+            }
         }
-        
-        // @todo load tracks somewhere else, move this ugly shit
-
         
         output.presentTracks(tracks)
     }
-    
 }
