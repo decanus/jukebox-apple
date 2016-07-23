@@ -10,17 +10,14 @@ import Foundation
 import AVKit
 import XCDYouTubeKit
 
+// TODO implement methods
 public class JNYouTubePlayer: JNPlayer {
     
     private var player: AVPlayer?
-    private var _track: JNTrack?
+    private var track: JNTrack?
     
     public init() { }
-    
-    public var track: JNTrack? {
-        return _track
-    }
-    
+
     public func play() {
         
     }
@@ -29,55 +26,11 @@ public class JNYouTubePlayer: JNPlayer {
         
     }
     
-    
     public var platform: JNPlatform {
         return .YouTube
     }
 
-    // TODO use JNYouTubeTrack
     public func setTrack(track: JNTrack) {
-        self._track = track
-        
-        XCDYouTubeClient.defaultClient().getVideoWithIdentifier(String(track.id)) { [weak self] (video: XCDYouTubeVideo?, error: NSError?) in
-            if let streamURL = (video?.streamURLs[XCDYouTubeVideoQualityHTTPLiveStreaming] ??
-                video?.streamURLs[XCDYouTubeVideoQuality.HD720.rawValue] ??
-                video?.streamURLs[XCDYouTubeVideoQuality.Medium360.rawValue] ??
-                video?.streamURLs[XCDYouTubeVideoQuality.Small240.rawValue]) {
-
-                self!.player = AVPlayer(URL: streamURL)
-                
-                dispatch_async(dispatch_get_main_queue(), {
-                    self!.player!.play()
-                })
-            }
-        }
+        self.track = track
     }
 }
-
-//    private let view = AVPlayerViewController()
-//    private var _track: JNTrack?
-//    
-//    public var track: JNTrack? {
-//        return _track
-//    }
-//    
-//    func play() {
-//        view.player?.play()
-//    }
-//    
-//    func pause() {
-//        view.player?.pause()
-//    }
-//    
-//    var platform: JNPlatform {
-//        return .YouTube
-//    }
-//    
-//    func setTrack(track: JNTrack) {
-//        self._track = track
-//        
-//        XCDYouTubeClient.defaultClient().getVideoWithIdentifier(track.getID()) { [weak self] (video: XCDYouTubeVideo?, error: NSError?) in
-//            
-//        }
-//    }
-//}

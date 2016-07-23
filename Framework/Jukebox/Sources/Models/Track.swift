@@ -8,18 +8,29 @@
 
 import Foundation
 
-public protocol JNTrack: JNSearchResult {
+public class JNTrack: JNSearchResult {
     
-    var id: Int { get }
+    let id: Int
+    let title: String
+    let artists: [JNArtist]
+    let playbackSources: [JNPlaybackSource]
     
-    var title: String { get }
+    init(id: Int, title: String, artists: [JNArtist], playbackSources: [JNPlaybackSource]) {
+        self.id = id
+        self.title = title
+        self.artists = artists
+        self.playbackSources = playbackSources
+    }
     
-    var artists: [JNArtist] { get }
-    
-    var duration: NSTimeInterval { get set }
-    
-    var platform: JNPlatform { get }
-    
+    public func hasPlaybackSource(forPlatform platform: JNPlatform) -> Bool {
+        for source in playbackSources {
+            if source.platform == platform {
+                return true
+            }
+        }
+        
+        return false
+    }
 }
 
 

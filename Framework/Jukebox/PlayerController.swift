@@ -10,45 +10,34 @@ import Foundation
 
 public class JNPlayerController {
     
+    private var queue = JNQueue()
     private var currentPlayer: JNPlayer?
     
-    private var queue = JNQueue()
-    
     public func play() {
-        if !queue.hasAnyTracks() {
+        if queue.tracks == nil {
             return
         }
         
-        if queue.currentTrack.platform != currentPlayer?.platform {
-            switch queue.currentTrack.platform {
-            case .YouTube:
-                currentPlayer = JNYouTubePlayer()
-            default:
-                currentPlayer = JNYouTubePlayer()
-            }
+        if currentPlayer == nil || !queue.currentTrack!.hasPlaybackSource(forPlatform: currentPlayer!.platform) {
+            currentPlayer = JNPlayerFactory.createPlayer(forPlatform: queue.currentTrack!.playbackSources[0].platform)
         }
         
-        if currentPlayer!.track == nil || queue.currentTrack != currentPlayer!.track! {
-            currentPlayer!.setTrack(queue.currentTrack)
-        }
-        
+        currentPlayer!.setTrack(queue.currentTrack!)
         currentPlayer!.play()
     }
-    
+
     public func pause() {
         currentPlayer?.pause()
     }
     
-    public func previous() {
-        if queue.hasPrevious() {
-            queue.getPreviousTrack()
+    public func next() {
+        if queue.next() != nil {
             play()
         }
     }
     
-    public func next() {
-        if queue.hasNext() {
-            queue.getNextTrack()
+    public func previous() {
+        if queue.previous() != nil {
             play()
         }
     }

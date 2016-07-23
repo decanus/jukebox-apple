@@ -50,7 +50,7 @@ public class JNSearch {
     }
     
     private func parseArtist(data: NSDictionary) -> JNArtist {
-        return JNYoutubeArtist(
+        return JNArtist(
             id: data["id"] as! Int,
             name: data["name"] as! String,
             permalink: data["permalink"] as! String)
@@ -65,13 +65,33 @@ public class JNSearch {
         
         return artists
     }
+    
+    private func parseSource(data: NSDictionary) -> JNPlaybackSource! {
+        if data["source"] as! String == "youtube" {
+            return JNYouTubePlaybackSource(
+                id: data["source_data"] as! String,
+                duration: data["duration"] as! Double)
+        }
+        
+        return nil
+    }
+    
+    private func parseSources(data: NSArray) -> [JNPlaybackSource] {
+        var playbackSources = [JNPlaybackSource]()
+        
+        for element in data {
+            playbackSources.append(parseSource(element as! NSDictionary))
+        }
+        
+        return playbackSources
+    }
 
     private func parseTrack(data: NSDictionary) -> JNTrack {
-        return JNYoutubeTrack(
+        return JNTrack(
             id: data["id"] as! Int,
             title: data["title"] as! String,
             artists: parseArtists(data["artists"] as! NSArray),
-            duration: data["duration"] as! Double)
+            playbackSources: parseSources(data["sources"] as! NSArray))
     }
     
 }

@@ -19,7 +19,7 @@ public class JNPlaylist {
         var duration = 0.0
         
         for track in tracks {
-            duration += track.duration
+            duration += track.playbackSources[0].duration
         }
         
         return duration
@@ -30,6 +30,7 @@ public class JNPlaylist {
     }
     
 }
+
 
 public func += (left: JNPlaylist, right: JNTrack) {
     left.addTrack(right)

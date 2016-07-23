@@ -17,6 +17,4 @@ public protocol JNPlayer {
     func setTrack(track: JNTrack)
     
     var platform: JNPlatform { get }
-    
-    var track: JNTrack? { get }
 }

@@ -15,8 +15,9 @@
 		3F5D47191D2464C80076AB95 /* Jukebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D47121D2464C80076AB95 /* Jukebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F677C2B1D392A4D00725BE3 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2A1D392A4D00725BE3 /* Artist.swift */; };
 		3F677C2D1D392A5C00725BE3 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2C1D392A5C00725BE3 /* Search.swift */; };
-		3F677C2F1D392CB900725BE3 /* YoutubeArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */; };
-		3F71E3761D43DD9D0069CFDF /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E3751D43DD9D0069CFDF /* Source.swift */; };
+		3F71E3781D43E2550069CFDF /* PlaybackSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E3771D43E2550069CFDF /* PlaybackSource.swift */; };
+		3F71E37A1D43E2A90069CFDF /* YouTubePlaybackSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E3791D43E2A90069CFDF /* YouTubePlaybackSource.swift */; };
+		3F71E37C1D43F88B0069CFDF /* PlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E37B1D43F88B0069CFDF /* PlayerFactory.swift */; };
 		3F7CDADD1D3EB044005144F1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CDADC1D3EB044005144F1 /* Player.swift */; };
 		3F7CDADF1D3EB22C005144F1 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CDADE1D3EB22C005144F1 /* PlayerController.swift */; };
 		3F7CDAE31D3EB4DC005144F1 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CDAE21D3EB4DC005144F1 /* YouTubePlayer.swift */; };
@@ -25,7 +26,6 @@
 		3FAABA731D2800A900B58526 /* JNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40489C1D27F21C00CEF8C8 /* JNConfiguration.swift */; };
 		3FF8DCB21D294C5600800F5A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB11D294C5600800F5A /* Track.swift */; };
 		3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB31D294CBD00800F5A /* Platform.swift */; };
-		3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */; };
 		3FF8DCB81D295B0300800F5A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB71D295B0300800F5A /* Playlist.swift */; };
 		3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCB91D29609100800F5A /* PlaybackState.swift */; };
 		3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */; };
@@ -46,8 +46,9 @@
 		3F5D47121D2464C80076AB95 /* Jukebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jukebox.h; path = Sources/Jukebox.h; sourceTree = "<group>"; };
 		3F677C2A1D392A4D00725BE3 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		3F677C2C1D392A5C00725BE3 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Search.swift; path = Sources/API/Search/Search.swift; sourceTree = "<group>"; };
-		3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeArtist.swift; sourceTree = "<group>"; };
-		3F71E3751D43DD9D0069CFDF /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		3F71E3771D43E2550069CFDF /* PlaybackSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackSource.swift; sourceTree = "<group>"; };
+		3F71E3791D43E2A90069CFDF /* YouTubePlaybackSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlaybackSource.swift; sourceTree = "<group>"; };
+		3F71E37B1D43F88B0069CFDF /* PlayerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerFactory.swift; sourceTree = "<group>"; };
 		3F7CDADC1D3EB044005144F1 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3F7CDADE1D3EB22C005144F1 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		3F7CDAE21D3EB4DC005144F1 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		3F91BDC31D27D88A00CEBB3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3FF8DCB11D294C5600800F5A /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		3FF8DCB31D294CBD00800F5A /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
-		3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTrack.swift; sourceTree = "<group>"; };
 		3FF8DCB71D295B0300800F5A /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		3FF8DCB91D29609100800F5A /* PlaybackState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
 		3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMode.swift; sourceTree = "<group>"; };
@@ -127,6 +127,7 @@
 				3F7CDADC1D3EB044005144F1 /* Player.swift */,
 				3F7CDADE1D3EB22C005144F1 /* PlayerController.swift */,
 				3F7CDAE21D3EB4DC005144F1 /* YouTubePlayer.swift */,
+				3F71E37B1D43F88B0069CFDF /* PlayerFactory.swift */,
 			);
 			name = Player;
 			sourceTree = "<group>";
@@ -156,12 +157,11 @@
 				3FF8DCBD1D29628300800F5A /* Queue.swift */,
 				3FF8DCBB1D2960DE00800F5A /* RepeatMode.swift */,
 				3FF8DCB91D29609100800F5A /* PlaybackState.swift */,
-				3FF8DCB51D294E2300800F5A /* YoutubeTrack.swift */,
 				3FF8DCB31D294CBD00800F5A /* Platform.swift */,
 				3FF8DCB11D294C5600800F5A /* Track.swift */,
 				3FF8DCB71D295B0300800F5A /* Playlist.swift */,
-				3F677C2E1D392CB900725BE3 /* YoutubeArtist.swift */,
-				3F71E3751D43DD9D0069CFDF /* Source.swift */,
+				3F71E3771D43E2550069CFDF /* PlaybackSource.swift */,
+				3F71E3791D43E2A90069CFDF /* YouTubePlaybackSource.swift */,
 			);
 			name = Models;
 			path = Sources/Models;
@@ -376,15 +376,15 @@
 				3FF8DCBC1D2960DE00800F5A /* RepeatMode.swift in Sources */,
 				3F8ACCAD1D37A7B6004A85F1 /* SearchResult.swift in Sources */,
 				3F7CDADF1D3EB22C005144F1 /* PlayerController.swift in Sources */,
-				3FF8DCB61D294E2300800F5A /* YoutubeTrack.swift in Sources */,
 				3F7CDAE31D3EB4DC005144F1 /* YouTubePlayer.swift in Sources */,
+				3F71E37C1D43F88B0069CFDF /* PlayerFactory.swift in Sources */,
 				3F7CDADD1D3EB044005144F1 /* Player.swift in Sources */,
-				3F71E3761D43DD9D0069CFDF /* Source.swift in Sources */,
+				3F71E37A1D43E2A90069CFDF /* YouTubePlaybackSource.swift in Sources */,
 				3FF8DCBA1D29609100800F5A /* PlaybackState.swift in Sources */,
-				3F677C2F1D392CB900725BE3 /* YoutubeArtist.swift in Sources */,
 				3FF8DCB41D294CBD00800F5A /* Platform.swift in Sources */,
 				3FF8DCB21D294C5600800F5A /* Track.swift in Sources */,
 				3FF8DCBE1D29628300800F5A /* Queue.swift in Sources */,
+				3F71E3781D43E2550069CFDF /* PlaybackSource.swift in Sources */,
 				3F677C2B1D392A4D00725BE3 /* Artist.swift in Sources */,
 				3FF8DCB81D295B0300800F5A /* Playlist.swift in Sources */,
 			);

@@ -8,11 +8,15 @@
 
 import Foundation
 
-public protocol JNArtist: JNSearchResult {
+public class JNArtist: JNSearchResult {
 
-    var id: Int { get }
-
-    var name: String { get }
-
-    var permalink: String { get }
+    public let id: Int
+    public let name: String
+    public let permalink: String
+    
+    public init(id: Int, name: String, permalink: String) {
+        self.id = id
+        self.name = name
+        self.permalink = permalink
+    }
 }
