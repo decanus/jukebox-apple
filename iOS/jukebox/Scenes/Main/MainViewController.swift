@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import JukeboxNinja
 
 class MainViewController: UIViewController {
 
@@ -38,8 +39,20 @@ class MainViewController: UIViewController {
             player.addToQueue(YoutubeTrack(id: "QnxpHIl5Ynw", duration: 297, title: "High By The Beach"))
             player.addToQueue(YoutubeTrack(id: "jcF5HtGvX5I", duration: 122, title: "Yoncé"))
             player.addToQueue(YoutubeTrack(id: "JCT_lgJ5eq8", duration: 205))
+            // player.start()
             wasLoaded = true
-        } 
+        }
+        
+        let search = JNSearch()
+        search.search(query: "sia") { (results) in
+            for result in results {
+                if let track = result as? JNTrack {
+                    let player = JNYouTubePlayer()
+                    player.setTrack(track)
+                    break
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

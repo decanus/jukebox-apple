@@ -20,7 +20,7 @@ public class JNYoutubeTrack: JNTrack {
         self.id = id
         self.title = title
         self.artists = artists
-        self.platform = JNPlatform.Youtube
+        self.platform = .YouTube
         self.duration = duration
     }
 

@@ -22,6 +22,7 @@ public class JNSearch {
         Alamofire.request(.GET, baseUrl.absoluteString, parameters: parameters)
         .validate()
         .responseJSON { (response) in
+
                 if response.result.isFailure {
                     return callback([])
                 }
@@ -34,7 +35,7 @@ public class JNSearch {
 
                 for entry in (response.result.value as! NSDictionary)["results"] as! NSArray {
                     let data = entry as! NSDictionary
-
+                    
                     if data["type"] as! String == "tracks" {
                         results.append(self.parseTrack(data))
                     }
@@ -54,14 +55,6 @@ public class JNSearch {
             name: data["name"] as! String,
             permalink: data["permalink"] as! String)
     }
-
-    private func parseTrack(data: NSDictionary) -> JNTrack {
-        return JNYoutubeTrack(
-            id: data["id"] as! Int,
-            title: data["title"] as! String,
-            artists: parseArtists(data["artists"] as! NSArray),
-            duration: data["duration"] as! Double)
-    }
     
     private func parseArtists(data: NSArray) -> [JNArtist] {
         var artists = [JNArtist]()
@@ -71,6 +64,14 @@ public class JNSearch {
         }
         
         return artists
+    }
+
+    private func parseTrack(data: NSDictionary) -> JNTrack {
+        return JNYoutubeTrack(
+            id: data["id"] as! Int,
+            title: data["title"] as! String,
+            artists: parseArtists(data["artists"] as! NSArray),
+            duration: data["duration"] as! Double)
     }
     
 }

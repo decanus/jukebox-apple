@@ -21,3 +21,12 @@ public protocol JNTrack: JNSearchResult {
     var platform: JNPlatform { get }
     
 }
+
+
+public func == (lhs: JNTrack, rhs: JNTrack) -> Bool {
+    return lhs.id == rhs.id
+}
+
+public func != (lhs: JNTrack, rhs: JNTrack) -> Bool {
+    return lhs.id != rhs.id
+}

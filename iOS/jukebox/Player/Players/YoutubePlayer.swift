@@ -77,8 +77,8 @@ class YoutubePlayer: NSObject, PlayerProtocol {
                     self?.presentVideoLayer()
                     self!.playerView.player?.play()
                 })
+                
                 self!.playerView.player?.play()
-
             }
         }
     }

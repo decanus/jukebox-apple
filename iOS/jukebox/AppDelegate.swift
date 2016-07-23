@@ -17,14 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        JNConfiguration.isDevelopment = false
+        JNConfiguration.apiKey = "5eecc5da-0ff0-4aa0-98a0-ebcdfab3336c"
+
         let navigationController = UINavigationController()
         navigationController.viewControllers = [ViewControllerFactory.createMainViewController()]
         
         let tabController = TabBarController(player: PlayerFactory.createPlayer())
         tabController.viewControllers = [ViewControllerFactory.createMainViewController(), ViewControllerFactory.createSearchViewController()]
-        
-        JNConfiguration.isDevelopment = false
-        JNConfiguration.apiKey = "5eecc5da-0ff0-4aa0-98a0-ebcdfab3336c"
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = tabController

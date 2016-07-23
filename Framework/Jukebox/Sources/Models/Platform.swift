@@ -9,7 +9,7 @@
 public enum JNPlatform {
  
     case Deezer
-    case Youtube
+    case YouTube
     case Spotify
     case Soundcloud
     
