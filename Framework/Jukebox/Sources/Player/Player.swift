@@ -14,7 +14,7 @@ public protocol JNPlayer {
     
     func pause()
     
-    func setTrack(track: JNTrack)
+    func setPlaybackSource(source: JNPlaybackSource)
     
     var platform: JNPlatform { get }
 }

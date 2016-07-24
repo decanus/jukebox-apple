@@ -40,11 +40,11 @@
 		2EF0B18B1CE1D7850061FF7A /* PlayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0B18A1CE1D7850061FF7A /* PlayerFactory.swift */; };
 		2EF0B18F1CE1EB990061FF7A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0B18E1CE1EB990061FF7A /* Queue.swift */; };
 		2EFD5D521CEAF1B5003A8C23 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD5D511CEAF1B5003A8C23 /* SearchPresenter.swift */; };
-		3F71E3731D43DB930069CFDF /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F71E3721D43DB930069CFDF /* JukeboxNinja.framework */; };
-		3F71E3741D43DB990069CFDF /* JukeboxNinja.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F71E3721D43DB930069CFDF /* JukeboxNinja.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9ACD94A98D9322688D1058AB /* Pods_jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD88C592ACED057EE21D5CAC /* Pods_jukebox.framework */; };
 		AC12B127AE05E20CE95EC95E /* SearchViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B9A7336C1DA6665BB9E9 /* SearchViewControllerOutput.swift */; };
 		AC12B5E154B2C8DA24C96393 /* SearchPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B675E72C86FAF174A8F6 /* SearchPresenterOutput.swift */; };
 		AC12B5FE069319AAF8903CE6 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B2E3073DEF176B9C0412 /* SearchInteractorOutput.swift */; };
+		BAA652B7D195E5E115CF2CBF /* JukeboxNinja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA654D63DA3F4C8C2E71CEA /* JukeboxNinja.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3F71E3741D43DB990069CFDF /* JukeboxNinja.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,11 +123,12 @@
 		2EF0B18A1CE1D7850061FF7A /* PlayerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerFactory.swift; sourceTree = "<group>"; };
 		2EF0B18E1CE1EB990061FF7A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		2EFD5D511CEAF1B5003A8C23 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
-		3F71E3721D43DB930069CFDF /* JukeboxNinja.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JukeboxNinja.framework; sourceTree = "<group>"; };
 		5DF129D95CA9BF52D93A7087 /* Pods-jukebox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jukebox.release.xcconfig"; path = "Pods/Target Support Files/Pods-jukebox/Pods-jukebox.release.xcconfig"; sourceTree = "<group>"; };
 		AC12B2E3073DEF176B9C0412 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
 		AC12B675E72C86FAF174A8F6 /* SearchPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterOutput.swift; sourceTree = "<group>"; };
 		AC12B9A7336C1DA6665BB9E9 /* SearchViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerOutput.swift; sourceTree = "<group>"; };
+		BAA654D63DA3F4C8C2E71CEA /* JukeboxNinja.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JukeboxNinja.framework; path = "/Users/jeremy/Library/Caches/AppCode2016.2/DerivedData/Jukebox-esodjhefsoyhhccwxcgvyroaojbw/Build/Products/Debug-iphoneos/JukeboxNinja.framework"; sourceTree = "<absolute>"; };
+		DD88C592ACED057EE21D5CAC /* Pods_jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F71E3731D43DB930069CFDF /* JukeboxNinja.framework in Frameworks */,
+				9ACD94A98D9322688D1058AB /* Pods_jukebox.framework in Frameworks */,
+				BAA652B7D195E5E115CF2CBF /* JukeboxNinja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +409,9 @@
 		B137E74D3FE32D8FFE1EF7FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F71E3721D43DB930069CFDF /* JukeboxNinja.framework */,
 				2EF0B1821CE1BB9A0061FF7A /* youtube-ios-player-helper */,
+				DD88C592ACED057EE21D5CAC /* Pods_jukebox.framework */,
+				BAA654D63DA3F4C8C2E71CEA /* JukeboxNinja.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -578,7 +580,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FE2490D893BE481862C0B4C9 /* [CP] Embed Pods Frameworks */ = {
@@ -769,6 +771,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 					"$(PROJECT_DIR)",
+					"\"${PROJECT_DIR}/../../Library/Caches/AppCode2016.2/DerivedData/Jukebox-esodjhefsoyhhccwxcgvyroaojbw/Build/Products/Debug-iphoneos\"/**",
 				);
 				INFOPLIST_FILE = jukebox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -792,6 +795,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 					"$(PROJECT_DIR)",
+					"\"${PROJECT_DIR}/../../Library/Caches/AppCode2016.2/DerivedData/Jukebox-esodjhefsoyhhccwxcgvyroaojbw/Build/Products/Debug-iphoneos\"/**",
 				);
 				INFOPLIST_FILE = jukebox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

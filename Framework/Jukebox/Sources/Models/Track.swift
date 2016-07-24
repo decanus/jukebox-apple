@@ -22,14 +22,14 @@ public class JNTrack: JNSearchResult {
         self.playbackSources = playbackSources
     }
     
-    public func hasPlaybackSource(forPlatform platform: JNPlatform) -> Bool {
+    public func getPlaybackSource(forPlatform platform: JNPlatform) -> JNPlaybackSource? {
         for source in playbackSources {
             if source.platform == platform {
-                return true
+                return source
             }
         }
         
-        return false
+        return nil
     }
 }
 

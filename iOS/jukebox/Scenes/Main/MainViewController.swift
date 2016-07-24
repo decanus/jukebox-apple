@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import JukeboxNinja
+import MediaPlayer
 
 class MainViewController: UIViewController {
 
@@ -43,12 +44,15 @@ class MainViewController: UIViewController {
             wasLoaded = true
         }
         
+        activateAudioSession()
+        
         let search = JNSearch()
         search.search(query: "sia") { (results) in
             for result in results {
                 if let track = result as? JNTrack {
-                    let player = JNYouTubePlayer()
-                    player.setTrack(track)
+                    let controller = JNPlayerController()
+                    controller.queue += track
+                    controller.play()
                     break
                 }
             }
@@ -60,4 +64,28 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    private func activateAudioSession() {
+        let nextTrackCommand = MPRemoteCommandCenter.sharedCommandCenter().nextTrackCommand
+        nextTrackCommand.enabled = true
+        nextTrackCommand.addTargetWithHandler({_ in return MPRemoteCommandHandlerStatus.Success})
+        
+        let previousTrackCommand = MPRemoteCommandCenter.sharedCommandCenter().previousTrackCommand
+        previousTrackCommand.enabled = true
+        previousTrackCommand.addTargetWithHandler({_ in return MPRemoteCommandHandlerStatus.Success})
+        
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+            } catch {
+                print("Error info: \(error)")
+            }
+            
+        } catch {
+            print("Error info: \(error)")
+        }
+    }
 }

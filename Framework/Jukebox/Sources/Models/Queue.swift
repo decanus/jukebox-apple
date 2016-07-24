@@ -51,9 +51,8 @@ public class JNQueue {
 
 public func += (left: JNQueue, right: JNTrack) {
     if left.tracks == nil {
-        left.tracks = [JNTrack]()
+        left.tracks = [right]
+    } else {
+        left.tracks!.append(right)
     }
-    
-    left.tracks!.append(right)
 }
-
